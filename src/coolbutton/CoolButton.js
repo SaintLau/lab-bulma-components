@@ -2,21 +2,32 @@ import React from 'react';
 import "bulma/css/bulma.css";
 
 
-const CoolButton = props => {
-   
-    return (
+ 
+    const CoolButton = ({isPrimary, isDanger, children}) => {
+
+        let style = 'button';
+
+        if (isPrimary) {
+            style += ' is-primary';
+        } else if(isDanger) {
+            style += ' is-danger';
+        }
+
+        return (
+            <button className={style}>
+                {children}
+            </button>
+        )
+
+            {/*  
+        return (
         <div>
-            <button className="button is-rounded my-class is-danger is-small">
+           <button className="button">
+              
                {props.children}
             </button>
         </div>
-    )
+    )*/}
 }
-
-{/*
-function CoolButton( {children} ) {
-
-} 
-*/}
 
 export default CoolButton;

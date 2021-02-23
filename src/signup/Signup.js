@@ -9,7 +9,7 @@ const Signup = () => {
             <FormField label='name' type='text' />
             <FormField label='email' type='email' />
             <FormField label='password' type='password' />
-            <CoolButton />
+            <CoolButton>Submit</CoolButton>
         </div>
     )
 }

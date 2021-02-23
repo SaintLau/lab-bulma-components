@@ -7,12 +7,9 @@ import Signup from './signup/Signup';
 const App = () => {
   return (
     <div>
-
       <Navbar />
-      <FormField />
-      <CoolButton />
       <Signup />
-      
+
     </div>
   )
 };

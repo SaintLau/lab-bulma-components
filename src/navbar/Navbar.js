@@ -3,6 +3,7 @@ import "bulma/css/bulma.css";
 import CoolButton from '../coolbutton/CoolButton';
 
 function Navbar(props) {
+    
     return (
 
  <nav className='navbar is-primary'>
@@ -22,10 +23,7 @@ function Navbar(props) {
         <div className='navbar-end'>
             <div className='navbar-item'>
                 <div className='field is-grouped'>
-                     
-                        <CoolButton>Login</CoolButton>
-                    
-                   
+                        <CoolButton isPrimary={true}>Login</CoolButton>
                         <CoolButton isDanger>Signup</CoolButton>   
                 </div>
             </div>
